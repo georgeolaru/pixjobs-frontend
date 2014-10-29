@@ -2,7 +2,7 @@
 
     var $button         = $('.apply-modal'),
         duration        = 900,
-        newText         = navigator.appVersion.indexOf("Mac") != -1 ? 'Alt + CMD + U ?' : 'Ctrl + U',
+        newText         = navigator.appVersion.indexOf("Mac") != -1 ? 'Alt + CMD + U ?' : 'Ctrl + U ?',
         isTouchDevice   = 'ontouchstart' in document.documentElement;
 
     function stopEvent(ev) {
