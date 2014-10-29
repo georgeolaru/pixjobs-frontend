@@ -1,0 +1,388 @@
+/* ==========================================================================
+   General Style
+   ========================================================================== */
+
+html {
+    font: normal 112.5%/1.65;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+body {
+    color: #fff;
+
+    font-size: 16px;
+    line-height: 1.7;
+
+    -webkit-font-smoothing: antialiased;
+
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
+    word-wrap: break-word;
+}
+
+.container {
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.hero-image {
+    text-align: center;
+}
+
+/* ==========================================================================
+   Sections
+   ========================================================================== */
+section {
+    padding: 10% 0 0 0;
+    background-size: contain !important;
+}
+    .section-1 {
+        background-color: #f2f3ee;
+
+        padding-top: 0;
+        margin-bottom: -1%;
+    }
+        .section-1 .container {
+            /*padding-top: 0;*/
+        }
+
+        .section-1 .hero-image {
+
+        }
+
+    .section-2 {
+        background: url("../img/bg-section-1.png") top center repeat-x;
+        background-color: #badddf;
+
+        color: #444444;
+
+        padding-bottom: 17%;
+        padding-top: 5%;
+    }
+        .section-2 .container {
+            padding-top: 0;
+        }
+
+    .section-3 {
+        background: url("../img/bg-section-2.png") top center repeat-x;
+        background-color: #8ad6db;
+
+        padding-bottom: 10%;
+    }
+        .section-3 .container {
+            margin-top: -30%;
+        }
+
+    .section-4 {
+        background: url("../img/bg-section-3.png") top center repeat-x;
+        background-color: #67ccd2;
+
+        padding-bottom: 14%;
+        padding-top: 20%;
+    }
+        .section-4 .container {
+            margin-top: -30%;
+        }
+        .section-4 .hero-image {
+            margin-bottom: 0%;
+        }
+
+    .section-5 {
+        background: url("../img/bg-section-4.png") top center repeat-x;
+        background-color: #42c3c5;
+    }
+        .section-5 .container {
+            margin-top: -30%;
+        }
+        .section-5 .hero-image {
+            margin-bottom: 3%;
+        }
+
+    .section-6 {
+        background: url("../img/bg-section-5.png") top center repeat-x;
+        background-color: #46535b;
+
+        padding-top: 4%;
+    }
+        .section-6 .container {
+            padding: 40px 0;
+        }
+        .section-6 h4 {
+            font-weight: bold;
+            line-height: 2.5;
+        }
+
+        .section-6 a {
+            display: block;
+            max-width: 50%;
+            margin: 0 auto;
+        }
+
+    .section-7 {
+        padding: 3% 0;
+        background-color: #282828;
+
+        color: #fff;
+        text-align: center;
+    }
+        .section-7 li {
+            display: inline-block;
+            margin: 0;
+        }
+
+        .section-7 li:before {
+            content: "";
+            margin: 0;
+            padding: 0;
+        }
+
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.5;
+    margin-top: 0;
+    text-align: center;
+    text-rendering: optimizeLegibility; 
+
+    color: #fff;
+}
+
+h1 {
+    color: #47545c;
+    font-size: 30px;
+    margin-bottom: 0.5em;
+
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 21px;
+    margin-bottom: 1.4em;
+}
+
+h3 {
+    font-size: 36px;
+    margin-bottom: 14.85px;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.7;
+    margin-bottom: 22.275px;
+}
+
+h5{
+    font-size: 21px;
+    margin-bottom: 25.45714px;
+}
+
+h6 {
+    font-size: 18px;
+    margin-bottom: 29.7px;
+}
+
+p {
+    margin: auto auto 1.5em; /* bottom margin for paragraphs */
+}
+
+p + p {
+    text-indent: 1.5em; /* indent subsequent paragraphs */
+}
+
+a {
+    color: #fff;
+    /*font-style: italic;*/
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #000;
+    }
+
+ul {
+    list-style: none;
+    padding-left: 20px;
+
+}
+
+    li {
+        margin-bottom: 1.5em;
+    }
+        li:before {
+            content: "–";
+            margin-left: -25px;
+            padding-right: 10px;
+        }
+
+img {
+    max-width: 100%;
+}
+
+.dark {
+    color: #47545c;
+}
+
+.light {
+    color: #fff;
+}
+
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+    body {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+        line-height: 1;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    h1, h2, h3, h4, h5, h6 {
+        line-height: 1;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h4 {
+        font-size: 24px;
+        line-height: 1.5;
+    }
+
+    ul {
+        padding-left: 40px;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+
+    body {
+        font-size: 18px;
+    }
+    .container {
+        max-width: 1000px;
+    }
+
+    ul, p {
+        padding: 0 10%;
+    }
+
+
+    .section-6 h4 {
+        display: inline;
+        font-size: 28px;
+    }
+
+    .section-6 a {
+        float: right;
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.button {
+    background: #4dd0da;
+    border-radius: 4px;
+    padding: 18px 40px;
+
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;;
+    text-decoration: none;
+    text-align: center;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #544c48;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #4dd0da;
+    color: white;
+    text-shadow: none;
+}
+
+::selection {
+    background: #4dd0da;
+    color: white;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
