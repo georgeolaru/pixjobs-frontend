@@ -386,3 +386,16 @@ fieldset {
 textarea {
     resize: vertical;
 }
+
+.apply-modal {
+    background-image: linear-gradient(to right, #438CBC 50%, #4dd0da 50%);
+    background-size: 200% 100%;
+    background-repeat: repeat;
+    background-position: 100% 0;
+    transition: background-position 300ms ease-out;
+}
+
+.apply-modal--loading {
+    background-position: 0 0;
+    transition: background-position 1s ease-out;
+}
